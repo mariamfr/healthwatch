@@ -1,0 +1,76 @@
+header {
+    margin: 8px 12px 0px 12px;
+    display: grid;
+    grid-template-rows: 100%;
+    height: 130px;
+    color: #000;
+    position: relative;
+}
+
+.header__container a {
+    text-decoration: none;
+    padding: 6px 12px;
+    color: #F3F4F6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.header__container a:hover {
+    border: 3px solid #1E3A8A;
+    border-radius: 12px;
+}
+
+.navbar {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr 2fr;
+    /* alinea en el eje horizontal */
+    justify-self: center;
+    /* alinea en el eje vertical */
+    align-self: center;
+    height: 40px;
+}
+
+.navbar img {
+    padding: 12px 0px;
+    height: 40px;
+}
+
+.navbar ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    /* alinea en el eje horizontal */
+    justify-self: center;
+    /* alinea en el eje vertical */
+    align-self: center;
+}
+
+.navbar i {
+    /* el espacio del fonts de inicio */
+    color: #10B981;
+    font-size: 35px;
+    padding: 7px 0px;
+    margin-top: 10px;
+}
+
+
+.navbar button {
+    background-color: #10B981;
+    color: #F3F4F6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 8px 0px;
+    border-radius: 12px;
+    border: none;
+    width: 200px;
+    height: 40px; 
+    margin-top: 12px;
+}
+
+.navbar button:hover {
+    border: 2px solid #A7F3D0;
+    cursor: pointer;
+}
