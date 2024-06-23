@@ -12,3 +12,8 @@ body {
 main {
     height: 76vh;
 }
+
+/* generales */
+h2 {
+    color: #F3F4F6;
+}
