@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.section {
+    margin: 8px 12px 0px 12px;
+    display: grid;
+    grid-template-rows: 100%;
+}
+
+.square {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* alinea en el eje horizontal */
+    justify-self: center;
+    /* alinea en el eje vertical */
+    align-self: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #1E3A8A;
+    box-shadow: 0 Rpx 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+form label {
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #F1F4F8;
+}
+
+form input,
+form textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #10B981;
+    color: #F3F4F6;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: bold;
+    padding: 8px 0px;
+    border-radius: 12px;
+    border: none;
+    width: 200px;
+    height: 40px; 
+    margin-top: 12px;
+}
+
+.FormEmail_group {
+    display: flex;
+    flex-direction: column;
+
+}

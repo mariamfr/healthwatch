@@ -3,7 +3,6 @@ header {
     display: grid;
     grid-template-rows: 100%;
     height: 130px;
-    color: #000;
     position: relative;
 }
 
@@ -11,14 +10,21 @@ header {
     text-decoration: none;
     padding: 6px 12px;
     color: #F3F4F6;
-    font-size: 20px;
+    font-size: 30px;
     font-style: normal;
     font-weight: bold;
 }
 
-.header__container a:hover {
+.header__container li a:hover {
     border: 3px solid #1E3A8A;
     border-radius: 12px;
+}
+
+.header__container li a.disabled {
+    background-color: #1E3A8A;
+    border-radius: 12px;
+    border: none;
+    cursor: none;
 }
 
 .navbar {
@@ -34,7 +40,7 @@ header {
 
 .navbar img {
     padding: 12px 0px;
-    height: 40px;
+    /* height: 40px; */
 }
 
 .navbar ul {
@@ -48,13 +54,17 @@ header {
 }
 
 .navbar i {
-    /* el espacio del fonts de inicio */
+    /* el espacio del fonts de Home */
     color: #10B981;
     font-size: 35px;
-    padding: 7px 0px;
+    padding: 4px 0px;
     margin-top: 10px;
 }
 
+.navbar i:hover {
+    color: #A7F3D0;
+    cursor: pointer;
+}
 
 .navbar button {
     background-color: #10B981;
@@ -74,3 +84,4 @@ header {
     border: 2px solid #A7F3D0;
     cursor: pointer;
 }
+

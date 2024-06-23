@@ -1,0 +1,38 @@
+.slogan_container {
+    /* margin: 8px 12px 3px 12px; */
+    display: grid;
+    grid-template-rows: 100%;
+    /* height: 550px; */
+    color: #F3F4F6;
+    position: relative;    
+}
+
+.slogan {
+    position: sticky;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* alinea en el eje vertical */
+    align-self: center;
+}
+
+.slogan_h1 {
+    grid-row: 1 / 2;    
+    padding-left: 40px;
+    font-weight: bold;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.slogan_images {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    /* alinea en el eje horizontal */
+    justify-self: end;
+    /* alinea en el eje vertical */
+    align-self: center;    
+}
+
+.slogan_images img {
+    height: 300px;;
+}

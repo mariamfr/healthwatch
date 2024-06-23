@@ -1,5 +1,5 @@
 footer {
-    margin: 8px 12px 3px 12px;
+    margin: 8px 12px 3px 3px;
     display: grid;
     grid-template-rows: 100%;
     height: 50px;
@@ -42,6 +42,10 @@ footer {
     border-radius: 12px;
 }
 
+.footer_container p {
+    padding-left: 30px;
+    font-size: 15px;
+}
 
 .footer_icons {
     display: grid;
