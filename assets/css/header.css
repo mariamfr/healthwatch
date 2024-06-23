@@ -1,5 +1,5 @@
 header {
-    margin: 8px 12px 0px 12px;
+    margin: 15px 12px 0px 12px;
     display: grid;
     grid-template-rows: 100%;
     height: 130px;
@@ -8,6 +8,7 @@ header {
 
 .header__container a {
     text-decoration: none;
+    margin-left: 10px;
     padding: 6px 12px;
     color: #F3F4F6;
     font-size: 30px;
@@ -28,9 +29,9 @@ header {
 }
 
 .navbar {
-    position: sticky;
+    /* position: sticky; */
     display: grid;
-    grid-template-columns: 1fr 5fr 1fr 2fr;
+    grid-template-columns: 1fr 6fr 1fr 2fr;
     /* alinea en el eje horizontal */
     justify-self: center;
     /* alinea en el eje vertical */
@@ -39,8 +40,7 @@ header {
 }
 
 .navbar img {
-    padding: 12px 0px;
-    /* height: 40px; */
+    height: 40px;
 }
 
 .navbar ul {
@@ -57,9 +57,9 @@ header {
     /* el espacio del fonts de Home */
     color: #10B981;
     font-size: 35px;
-    padding: 4px 0px;
-    margin-top: 10px;
+    padding: 4px;
 }
+
 
 .navbar i:hover {
     color: #A7F3D0;
@@ -69,19 +69,18 @@ header {
 .navbar button {
     background-color: #10B981;
     color: #F3F4F6;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: bold;
-    padding: 8px 0px;
     border-radius: 12px;
     border: none;
-    width: 200px;
-    height: 40px; 
-    margin-top: 12px;
+}
+
+.navbar button a {
+    font-size: 25px;
+    /* font-weight: 500; */
 }
 
 .navbar button:hover {
     border: 2px solid #A7F3D0;
     cursor: pointer;
 }
+
 

@@ -5,14 +5,14 @@ document.addEventListener("DOMContentLoaded", function() {
             document.getElementById('header-placeholder').innerHTML = data;
             // Obtener el nombre de la página actual
             const currentPage = document.location.pathname.split('/').pop().split('.').shift();
-            console.log(`primera:${currentPage}`);
+            console.log(`encuentra pagina actual:${currentPage}`);
             // Deshabilitar el enlace de la página actual
             document.querySelectorAll('.nav-link').forEach(link => {
-                console.log(`segunda:${currentPage} link es ${link.dataset.page}`);
+                console.log(`Recorre buscando:${currentPage} el link en ${link.dataset.page}`);
                 if (link.dataset.page === currentPage) {
                     link.classList.add('disabled');
                     link.removeAttribute('href');
-                    console.log(`tercera:${currentPage}`);
+                    console.log(`encuentra en la pagina:${currentPage} el elemento ${link.dataset.page}`);
                 }
             });
         });
