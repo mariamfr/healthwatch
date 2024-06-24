@@ -1,0 +1,94 @@
+main {
+    padding: 20px 0px 5px 40px;
+}
+
+.pagesTitle h2 {
+    font-size: 32px;
+}
+
+section {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+} 
+
+/* Contenedor del carrusel */
+.carousel-container {
+    position: relative;
+    width: 90%;
+    max-width: 900px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Carrusel */
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+/* Elemento del carrusel */
+.carousel-item {
+    min-width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #1E3A8A;
+}
+
+/* Organiza la tarjeta */
+.card {
+    padding: 0px 50px;
+    position: sticky;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    /* alinea en el eje vertical */
+    align-self: center;
+}
+
+.card_title {
+    padding-top: 50px;
+    font-size: 32px;
+    color: #1F2937;
+}
+
+.card_info {
+    padding-top: 40px;
+    color: #828282;
+    font-size: 24px;
+}
+
+/* Controles del carrusel */
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    background-color: #1E3A8A;
+    color: #60A5FA;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-control.prev {
+    left: 10px;
+    font-size: 80px;
+}
+
+.carousel-control.next {
+    right: 10px;
+    font-size: 80px;
+
+}
+
+/* Efectos de hover */
+.carousel-control:hover {
+    background-color: rgba(0, 0, 0, 0.4);
+}

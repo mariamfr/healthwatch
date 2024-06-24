@@ -16,11 +16,13 @@ header {
     font-weight: bold;
 }
 
+/* Efectos de hover */
 .header__container li a:hover {
     border: 3px solid #1E3A8A;
     border-radius: 12px;
 }
 
+/* Efecto cuando se remueve el link */
 .header__container li a.disabled {
     background-color: #1E3A8A;
     border-radius: 12px;
@@ -53,14 +55,14 @@ header {
     align-self: center;
 }
 
+/* Efectos del fonts de Home */
 .navbar i {
-    /* el espacio del fonts de Home */
     color: #10B981;
     font-size: 35px;
     padding: 4px;
 }
 
-
+/* Efectos de hover */
 .navbar i:hover {
     color: #A7F3D0;
     cursor: pointer;
@@ -75,12 +77,31 @@ header {
 
 .navbar button a {
     font-size: 25px;
-    /* font-weight: 500; */
 }
 
 .navbar button:hover {
     border: 2px solid #A7F3D0;
     cursor: pointer;
+}
+
+/* Organizando el boton de busqueda */
+.headerSearch__container {
+    display: flex;
+    /* Alinea los elementos a la derecha */
+    justify-content: flex-end;
+    align-items: end;   
+    margin-top: 20px;
+}
+
+.headerSearch {
+    padding-left: 25%;
+    width: 30%;
+    background-color: #A7F3D0;
+    /* border: 1px solid #ddd; */
+    color: #10B981;
+    border-radius: 12px;
+    border: none;
+    font-size: 35px;
 }
 
 
