@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,18 +8,31 @@
     <link rel="stylesheet" href="./../css/services.css">
     <!-- fonts Averia Sans Libre -->
     <!-- <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap" rel="stylesheet"> -->
-
+    <!-- Libreria Leaflet.js   -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
+    <!-- cargar el encabezado, y el pie de pagina -->
     <script defer src="./../js/loadHeader.js"></script>
     <script defer src="./../js/loadFooter.js"></script>
     <title>HealthWatch Town Services</title>
 </head>
+
 <body>
     <div id="header-placeholder"></div>
     <main>
-        <div class="pagesTitle">
+        <!-- <div class="pagesTitle">
             <h2>Services</h2>
-        </div>
+        </div> -->
+        <section>
+            <div class="map_container">
+                <div id="map">
+                </div>
+            </div>
+        </section>
     </main>
-    <div id="footer-placeholder"></div>        
+    <div id="footer-placeholder"></div>
+    <!-- Libreria Leaflet.js   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.js"></script>
+    <script src="./../js/services.js"></script>
 </body>
+
 </html>
