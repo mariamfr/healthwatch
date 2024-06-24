@@ -24,7 +24,7 @@ footer {
 
 .footer_container i:hover {
     border: 2px solid #A7F3D0;
-    cursor: pointer;    
+    cursor: pointer;
 }
 
 .footer_container a {
@@ -54,6 +54,18 @@ footer {
     /* alinea en el eje horizontal */
     justify-self: end;
     /* alinea en el eje vertical */
-    align-self: center;    
+    align-self: center;
+}
 
+/* manejo de los queries */
+@media screen and (max-width: 900px) {
+    footer {
+        /* border: 5px double red; */
+        height: auto;
+    }
+    @media screen and (max-width: 350px) {
+        .footer_container {
+            grid-template-columns: 1fr;
+        }
+    }
 }

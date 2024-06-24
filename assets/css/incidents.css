@@ -51,13 +51,13 @@ section {
 }
 
 .card_title {
-    padding-top: 50px;
+    padding-top: 15%;
     font-size: 32px;
     color: #1F2937;
 }
 
 .card_info {
-    padding-top: 40px;
+    padding-top: 5%;
     color: #828282;
     font-size: 24px;
 }
@@ -91,4 +91,35 @@ section {
 /* Efectos de hover */
 .carousel-control:hover {
     background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* manejo de los queries */
+@media screen and (max-width: 980px) {
+    section {
+        grid-template-rows: 50%, 50%;
+        border: 5px double greenyellow;
+        height: auto;
+    } 
+    .card {
+        grid-template-columns: 1fr 1fr;
+    } 
+    .card img {
+        width: 95%;
+    } 
+    .card_title {
+        padding-top: 8%;
+    }    
+}
+@media screen and (max-width: 800px) {
+    .card {
+        grid-template-columns: 1fr;
+    }    
+}
+@media screen and (max-width: 450px) {
+    .card_title {
+        font-size: 22px;
+    }  
+    .card_info {
+        font-size: 18px;
+    }    
 }

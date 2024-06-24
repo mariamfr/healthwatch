@@ -1,7 +1,7 @@
 header {
     margin: 15px 12px 0px 12px;
     display: grid;
-    grid-template-rows: 100%;
+    grid-template-rows: 50%, 50%;
     height: 130px;
     position: relative;
 }
@@ -38,7 +38,7 @@ header {
     justify-self: center;
     /* alinea en el eje vertical */
     align-self: center;
-    height: 40px;
+    /* height: 40px;  //revisando */
 }
 
 .navbar img {
@@ -89,7 +89,7 @@ header {
     display: flex;
     /* Alinea los elementos a la derecha */
     justify-content: flex-end;
-    align-items: end;   
+    align-items: end;
     margin-top: 20px;
 }
 
@@ -104,4 +104,52 @@ header {
     font-size: 35px;
 }
 
-
+/* manejo de los queries */
+@media screen and (max-width: 900px) {
+    header {
+        grid-template-rows: 50%, 50%;
+        border: 5px double black;
+        height: auto;
+    }
+    .navbar {
+        grid-template-columns: 1fr 2fr;
+    }
+    .navbar ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .header__container a {
+        font-size: 30px;
+    }    
+}
+@media screen and (max-width: 640px) {
+    header {
+        grid-template-rows: 100%;
+    }
+    .navbar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .header__container a {
+        font-size: 25px;
+    }
+    .headerSearch {
+        padding-left: 48%;
+        width: 70%;
+    }    
+}
+@media screen and (max-width: 400px) {
+    header {
+        grid-template-rows: 100%;
+        height: auto;
+        background-color: blueviolet;
+    }
+    .navbar {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navbar ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .headerSearch {
+        padding-left: 48%;
+        width: 70%;
+    }    
+}
