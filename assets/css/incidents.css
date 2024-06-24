@@ -97,7 +97,7 @@ section {
 @media screen and (max-width: 980px) {
     section {
         grid-template-rows: 50%, 50%;
-        border: 5px double greenyellow;
+        /* border: 5px double greenyellow; */
         height: auto;
     } 
     .card {
