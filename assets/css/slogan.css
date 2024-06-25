@@ -8,7 +8,7 @@
 .slogan {
     position: sticky;
     display: grid;
-    grid-template-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr 2fr;
     /* alinea en el eje vertical */
     align-self: center;
 }
