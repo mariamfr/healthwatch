@@ -152,7 +152,6 @@ header {
     header {
         grid-template-rows: 100%;
         height: auto;
-        background-color: blueviolet;
     }
 
     .navbar {
