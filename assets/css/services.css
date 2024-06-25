@@ -22,9 +22,32 @@ section {
     border-radius: 8px;
 }
 
+
 #map {
     height: 60vh;
     width: 100%;
     margin: 0;
     padding: 0;
+}
+
+/* para los filtros del mapa */
+#map_controls {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1000;
+    background: #A7F3D0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+}
+
+#map_controls label {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+#map_controls select {
+    padding: 5px;
+    font-size: 20px;
 }

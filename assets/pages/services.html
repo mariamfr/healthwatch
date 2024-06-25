@@ -7,7 +7,7 @@
     <!-- enlaces css -->
     <link rel="stylesheet" href="./../css/services.css">
     <!-- fonts Averia Sans Libre -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Averia+Sans+Libre:wght@400;700&display=swap" rel="stylesheet">
     <!-- Libreria Leaflet.js   -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.css" />
     <!-- cargar el encabezado, y el pie de pagina -->
@@ -25,6 +25,17 @@
         <section>
             <div class="map_container">
                 <div id="map">
+                    <!-- aca se carga el mapa -->
+                </div>
+                <div id="map_controls">
+                    <label for="service-type">Select Service Type</label>
+                    <select id="service-type">
+                        <option value="all">All Services</option>
+                        <option value="general">General Medicine</option>
+                        <option value="pediatrics">Pediatrics</option>
+                        <option value="dentistry">Dentistry</option>
+                        <option value="cardiology">Cardiology</option>
+                    </select>
                 </div>
             </div>
         </section>

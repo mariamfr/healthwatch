@@ -53,12 +53,24 @@ form button {
     border-radius: 12px;
     border: none;
     width: 200px;
-    height: 40px; 
+    height: 40px;
     margin-top: 12px;
 }
 
-.FormEmail_group {
+.formemail_group {
     display: flex;
     flex-direction: column;
+}
 
+.register a {
+    margin-top: 45px;
+    color: #F1F4F8;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;    
+}
+
+.register a:hover {
+    border: 3px solid #1E3A8A;
+    border-radius: 12px;    
 }
